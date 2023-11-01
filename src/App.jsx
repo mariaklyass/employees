@@ -30,11 +30,8 @@ const routes = [
   },
 ];
 
-const router = createBrowserRouter(
-  routes
-  //    {
-  //   basename: "/employees",
-  // }
-);
+const router = createBrowserRouter(routes, {
+  basename: "/employees",
+});
 
 export const App = () => <RouterProvider router={router} />;
